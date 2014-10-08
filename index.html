@@ -11,6 +11,7 @@
 		<meta name="description" content="">
 		<meta name="author" content="Phull, Raghuveer">
 
+		<link href="css/contactlist.css"  rel="stylesheet" type="text/css"/>
 		<script src="javascript/contactlist.js"></script>
 
 	</head>
@@ -47,44 +48,48 @@
 								<input type="text" id="contact-number" />
 								</td>
 								<td>
-								<input type="button" id="add-contact" value="add" onclick="addContact()"/>
+								<input type="button" id="add-contact" value="Add" onclick="addContact()"/>
 								</td>
 							</tr>
 						</table>
+						<br />
 						<input type="button" name="add" value="Add Contact" id="add" onclick="displayAddMenu();"/>
 					</div>
 					<!-- Div for input menu end -->
 
 				</div>
 				<!-- end add div -->
+				<!-- <div style="clear: both"></div> -->
 
-				<!-- begin export div -->
-				<div class="export">
-					<h3>Click below button to export JSON to text area</h3>
-					
-					<input type="button" name="export" value="Export Contact" id="export" onclick="exportContacts();"/>
-					<div id="export-div">
-						<textarea name="text-area" id="text-area" cols="50" rows="20" readonly="yes" placeholder="Your json will show up here ..."></textarea>
-						
-					</div>
+				<div>
+					<!-- begin export div -->
+					<div class="export left">
+						<h3>Click below button to export JSON to text area</h3>
 
-				</div>
-				<!-- end export div -->
-				
-				<!-- begin import div -->
-				<div class="import">
-					<h3>Import Contacts from JSON</h3>
-					
-					<div id="import-div">
-						<textarea name="import-area" id="import-area" cols="50" rows="20" placeholder="Enter your json here ... "></textarea>
+						<input type="button" name="export" value="Export Contact" id="export" onclick="exportContacts();"/>
+						<div id="export-div">
+							<textarea name="text-area" id="text-area" cols="50" rows="20" readonly="yes" placeholder="Your json will show up here after you click export..."></textarea>
+						</div>
+
 					</div>
-					<input type="button" name="import" value="Export Contact" id="export" onclick="importContacts();" />
+					<!-- end export div -->
+
+					<!-- begin import div -->
+					<div class="import right">
+						<h3>Import Contacts from JSON</h3>
+
+						<input type="button" name="import" value="Import Contact" id="export" onclick="importContacts();" />
+						<div id="import-div">
+							<textarea name="import-area" id="import-area" cols="50" rows="20" placeholder="Enter your json here and click import ... "></textarea>
+						</div>
+
+					</div>
+					<!-- end import div -->
+					<div style="clear: both"></div>
 				</div>
-				<!-- end import div -->
 
 			</div>
 			<!-- End content div -->
-
 
 			<br />
 			<br />
