@@ -21,8 +21,12 @@ The interface should be made up of the following:
 * An "Import" button that overwrites and populates the list of contacts with contact data manually entered into the textarea if it's properly formatted JSON. 
 * Create a fake event tracking function that will capture key user events and log them to a container somewhere on the page. Track whatever events you think help determine whether or not the interface is effective. 
 
-## Bonus Features remaining
-
+## Bonus Features Completed
+* Bonus points are rewarded if the data in the form persists when the user navigates away from the page and comes back 
+* Extra bonus points for how the persistent data is stored
 
 ## Features Skipped
-* Try to show off your knowledge of HTML5 and CSS3 in your implementation. 
+* Try to show off your knowledge of HTML5 and CSS3 in your implementation. (I will be honest here. I have not done much of it natively. I have used bootstrap/jquery ui to take care of this part for my work but it is limitation in this challenge)
+
+## Bonus Feature Skipped
+* Bonus points are rewarded depending on how and if animated transitions are used and implemented in the app (I will be honest here. I have not done much of it natively. I have used bootstrap/jquery ui to take care of this part for my work but it is limitation in this challenge)

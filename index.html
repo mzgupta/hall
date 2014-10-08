@@ -75,7 +75,7 @@
 					<!-- end export div -->
 
 					<!-- begin import div -->
-					<div class="import right">
+					<div class="import center">
 						<h3>Import Contacts from JSON</h3>
 
 						<input type="button" name="import" value="Import Contact" id="export" onclick="importContacts();" />
@@ -85,6 +85,20 @@
 
 					</div>
 					<!-- end import div -->
+					
+					<!-- Data Persist button -->
+					<div class="right">
+						<h3>Click below to persist data</h3>
+						
+						<input type="button" name="persist" value="Persist Contact" id="persist" onclick="persistContacts();" />
+						<input type="button" name="loadPersisted" value="Load Persisted Contact" id="load-persist" onclick="loadPersistedContacts();" />
+						<div id="import-div">
+							<textarea name="import-area" id="persist-area" cols="50" rows="20" readonly="yes" placeholder="Persisted Contacts will be loaded here ... "></textarea>
+						</div>
+
+					</div>
+					<!-- Data Persist button -->
+					
 					<div style="clear: both"></div>
 				</div>
 				<br />

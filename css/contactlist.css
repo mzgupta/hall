@@ -28,12 +28,17 @@ table td {
 	background-color: #ffffff;
 }
 
-.right {
-	float: right; 
-	width: 70%
+.center {
+	float: left ; 
+	width: 30%
 }
 
 .left {
 	float: left; 
 	width: 30%
+}
+
+.right {
+	float: right; 
+	width: 40%	
 }
