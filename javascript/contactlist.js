@@ -4,6 +4,17 @@
 
 var contacts = [ ];
 
+
+function tracking () {
+	var content = document.getElementById('contents');
+	var tracking = document.getElementById('tracking');
+	
+	content.addEventListener("mouseover", function () { return tracking.innerHTML += '<label style="color:red">Mouse is Hovering Over! <label><br>'; });
+	content.addEventListener("click", function () { return tracking.innerHTML += '<label style="color:blue">Who Clicked the mouse ?<label><br>' ;});
+	content.addEventListener("keypress", function () { return tracking.innerHTML += '<label style="color:aqua">Looks like somebody is pressing some keys..<label><br>' ;});
+	
+}
+
 function displayAddMenu( ) {
 	var addMenu = document.getElementById( 'add-menu' );
 	addMenu.style.display = 'block';
@@ -124,4 +135,8 @@ function hideAll( ) {
 	var addMenu = document.getElementById( 'add-menu' );
 	addMenu.style.display = 'none';
 	printTable( contacts );
+	
+	tracking();
 }
+
+

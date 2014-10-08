@@ -19,9 +19,10 @@ The interface should be made up of the following:
 * An "Export" button which takes the contact list and converts it to JSON 
 * A textarea that gets populated with the resulting JSON data after "Export" is clicked 
 * An "Import" button that overwrites and populates the list of contacts with contact data manually entered into the textarea if it's properly formatted JSON. 
-
-## Features remaining
 * Create a fake event tracking function that will capture key user events and log them to a container somewhere on the page. Track whatever events you think help determine whether or not the interface is effective. 
+
+## Bonus Features remaining
+
 
 ## Features Skipped
 * Try to show off your knowledge of HTML5 and CSS3 in your implementation. 
